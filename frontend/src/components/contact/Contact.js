@@ -55,7 +55,7 @@ function Contact() {
       </ContactBanner>
       <ContactForm />
       <NewsletterForm />
-      <GoogleMap />
+      {/* <GoogleMap /> */}
     </StyledContactSection>
   );
 }

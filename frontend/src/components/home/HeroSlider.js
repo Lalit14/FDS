@@ -161,12 +161,12 @@ const  { prevSlide, nextSlide ,moveToSlide, slide} = useStaticInfoSlider()
         <SliderContent>
           <Span>Best deals</Span>
           <SliderTitle>
-super discount <br></br>hamburgesa</SliderTitle>
-          <ButtonPrimary as={Link} to="/menu">ordenar</ButtonPrimary></SliderContent>
+super discount <br></br>hamburger</SliderTitle>
+          <ButtonPrimary as={Link} to="/menu">order</ButtonPrimary></SliderContent>
           </Slide>
          <Slide data-testid='slider2'  slide={slide} index={2}>
            <SliderImage src={PizzaSlide} alt= "pizza"></SliderImage>
-           <SliderContent><Span>Best deals</Span><SliderTitle>super discount <br></br>Pizza</SliderTitle><ButtonPrimary as={Link} to="/menu">ordenar</ButtonPrimary></SliderContent>
+           <SliderContent><Span>Best deals</Span><SliderTitle>super discount <br></br>Pizza</SliderTitle><ButtonPrimary as={Link} to="/menu">order</ButtonPrimary></SliderContent>
            </Slide>
             <Slide data-testid='slider3'  slide={slide} index={3}>
               <SliderImage src={EmpanadaSlide} alt= "empanadas" >
@@ -174,7 +174,7 @@ super discount <br></br>hamburgesa</SliderTitle>
               </SliderImage>
               <SliderContent><Span>Best deals</Span>
               <SliderTitle>super discount <br></br>Patty</SliderTitle>
-              <ButtonPrimary as={Link} to="/menu">ordenar</ButtonPrimary>
+              <ButtonPrimary as={Link} to="/menu">order</ButtonPrimary>
               </SliderContent>
               </Slide>
 

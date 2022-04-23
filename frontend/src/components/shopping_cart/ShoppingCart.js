@@ -89,7 +89,7 @@ export default function ShoppingCart() {
   return (
     <StyledCart isCartOpen={isCartOpen}>
       <CartHeader>
-        <CartTitle>Mi carrito</CartTitle>
+        <CartTitle>my cart</CartTitle>
       </CartHeader>
 
       {cartProducts?.length > 0 ? (
@@ -104,7 +104,7 @@ export default function ShoppingCart() {
       ) : null}
 
       <CartResume>
-        <h2>Total: ${totalCost}</h2>
+        <h2>Total: {totalCost}.RS</h2>
 
         {isCartLoading ? (
           <LoaderSpinner data-testid="spinner" small />

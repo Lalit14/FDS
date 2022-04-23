@@ -16,7 +16,7 @@ function Home() {
       <HeroSlider />
 
       <CarrouselSection />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <About />
     </StyledHome>
   );
