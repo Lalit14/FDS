@@ -10,11 +10,11 @@ const setSortPreferece = jest.fn()
 
 render(<SortProductsOptions setSortPreferece={setSortPreferece}/>)
 
-expect(screen.getByText('Más recientes')).toHaveValue('-createdAt')
-expect(screen.getByText('Más antiguos')).toHaveValue('createdAt')
-expect(screen.getByText('Menor precio')).toHaveValue('price')
-expect(screen.getByText('Mayor precio')).toHaveValue('-price')
-expect(screen.getByText('Populares')).toHaveValue('-sold')
+expect(screen.getByText('most recent')).toHaveValue('-createdAt')
+expect(screen.getByText('Older')).toHaveValue('createdAt')
+expect(screen.getByText('Lower price')).toHaveValue('price')
+expect(screen.getByText('Higher price')).toHaveValue('-price')
+expect(screen.getByText('Popular')).toHaveValue('-sold')
 
 
 })

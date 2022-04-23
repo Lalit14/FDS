@@ -27,11 +27,11 @@ export default function SortProductsOptions({setSortPreferece,defaultValue}){
 
 return(
 <OptionList name="sortProductBy" value={defaultValue} onChange={(e) => setSortPreferece(e.target.value)}>
-<Option value="-createdAt" >Más recientes</Option>
-<Option value="createdAt" >Más antiguos</Option>
-<Option value="price" >Menor precio</Option>
-<Option value="-price" >Mayor precio</Option>
-<Option value="-sold" >Populares</Option>
+<Option value="-createdAt" >most recent</Option>
+<Option value="createdAt" >Older</Option>
+<Option value="price" >Lower price</Option>
+<Option value="-price" >Higher price</Option>
+<Option value="-sold" >Popular</Option>
 
 </OptionList>
 

@@ -175,7 +175,7 @@ export default function Header() {
             Menu
           </StyledLink>
           <StyledLink to="/contact" onClick={closeNav}>
-            Contacto
+            Contact
           </StyledLink>
 
           {(isAdmin === true || isModerator === true) && (
@@ -211,7 +211,7 @@ export default function Header() {
           )}
         </NavLinks>
 
-        <SocialsMenu primary></SocialsMenu>
+        {/* <SocialsMenu primary></SocialsMenu> */}
       </NavWrapper>
       <IconButton onClick={() => toggleCart()}>
         <CartIcon src={cartIcon} alt="Cart-button" />

@@ -117,14 +117,14 @@ export default function ContactForm() {
           )}
           <TextInput
             type="text"
-            placeholder="Tu Nombre Completo..."
+            placeholder="your full name..."
             name="userName"
             ref={register({
-              required: "*El campo es requrido",
+              required: "*This field is required",
 
               pattern: {
                 value: /^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s\w]+$/,
-                message: "*Nombre no valido",
+                message: "*invalid name",
               },
             })}
             style={{ borderColor: errors.userName && "#bf0000" }}
@@ -134,15 +134,15 @@ export default function ContactForm() {
           )}
           <TextInput
             type="email"
-            placeholder="Tu email..."
+            placeholder="Enter Email"
             name="userEmail"
             ref={register({
-              required: "*El campo es requrido",
+              required: "*This is field required",
 
               pattern: {
                 value:
                   /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/,
-                meassage: "*Email no valido",
+                meassage: "*invalid email",
               },
             })}
             style={{ borderColor: errors.userEmail && "#bf0000" }}
@@ -156,7 +156,7 @@ export default function ContactForm() {
             placeholder="Asunto..."
             name="subject"
             ref={register({
-              required: "*El campo es requrido",
+              required: "*This field is required",
             })}
             style={{ borderColor: errors.subject && "#bf0000" }}
           />
@@ -164,39 +164,37 @@ export default function ContactForm() {
             <ErrorMessage>{errors.userMessage.message}</ErrorMessage>
           )}
           <Textarea
-            placeholder="Tu mensaje..."
+            placeholder="your message..."
             name="userMessage"
             ref={register({
-              required: "*El campo es requerido",
+              required: "*This field is required",
               maxLength: {
                 value: 255,
-                message: "*Tu mensaje no debe exceder los 255 carácteres",
+                message: "*Your message should not exceed 255 characters",
               },
             })}
             style={{ borderColor: errors.userMessage && "#bf0000" }}
           />
-          <ButtonPrimary as="input" type="submit" value="Enviar mensaje" />
+          <ButtonPrimary as="input" type="submit" value="send message" />
         </Form>
       </FormSection>
       <InfoSection>
-        <ContactTitle>Contactenos</ContactTitle>
+        <ContactTitle>Contact</ContactTitle>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla accumsan
-          metus. Ipsum dolor sit amet, consectetur adipiscing elit nulla
-          accumsan.
+          get in touch with the following phone number or mail
         </p>
         <List>
           <ListItem>
             <Icon>
               <img src={phoneIcon} alt="phone"></img>
             </Icon>{" "}
-            <ContactLink>+66 396 847 2637</ContactLink>
+            <ContactLink>+1234567897</ContactLink>
           </ListItem>
           <ListItem>
             <Icon>
               <img src={emaIlcon} alt="email"></img>
             </Icon>{" "}
-            <ContactLink>Hello@Burger.Com</ContactLink>
+            <ContactLink>Fooddeliverypartner@gmail.com</ContactLink>
           </ListItem>
         </List>
         <SocilasMenu />

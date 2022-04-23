@@ -11,7 +11,7 @@ export default function FilerCategoryOptions({categories,setCategoryPreferece,de
 return(
 <OptionList value={defaultValue} name="filterProductsByCategory" onChange={(e) =>handelChange(e)}>
 
-<Option value="all" >Todas las categorías</Option
+<Option value="all" >All categories</Option
 >
 {categories?.map( category =>
 

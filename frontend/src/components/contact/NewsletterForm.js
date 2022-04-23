@@ -60,7 +60,7 @@ align-items:center;
 `;
 const NewsletterInput= styled.input.attrs(props => ({
   type: 'text',
-  placeholder: 'Ingrese su email',
+  placeholder: 'Enter your email',
 
 }))`
 padding: 17px 10px 17px 20px;
@@ -86,8 +86,8 @@ const {register,handleSubmit,errors,onSubmit} =useNewsletterForm()
 <StyledNewsletter>
   <Wrapper>
     <NewsletterText>
-      <NewsletterTitle>subscribete  a nuestro newsletter</NewsletterTitle>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <NewsletterTitle>Subscribe Newsletter</NewsletterTitle>
+<p>subcribe to get in touch </p>
     </NewsletterText>
     <StyledNewsletterForm onSubmit={handleSubmit(onSubmit)}>
                  {errors.userEmail && <ErrorMessage>{errors.userEmail.message}</ErrorMessage>}
@@ -100,13 +100,13 @@ const {register,handleSubmit,errors,onSubmit} =useNewsletterForm()
                     
                       pattern:{
                       value:/^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/,
-                      message: "*Email no valido"
+                      message: "*invalid email"
                       }
           })}
            style={{ borderColor: errors.userEmail && "#000" }}
         ></NewsletterInput>
       
-<Button as="input" type="submit" value="Subscribirme"/>
+<Button as="input" type="submit" value="Subscribe"/>
 
       </NewsletterFormWrapper>
     </StyledNewsletterForm>
