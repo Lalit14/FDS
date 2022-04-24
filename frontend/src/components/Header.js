@@ -164,7 +164,9 @@ export default function Header() {
   return (
     <StyledHeader>
       <LogoLink to="/">
-        <LogoImg src={logo} alt="home"></LogoImg>
+      <StyledLink to="/" onClick={closeNav}>
+            FDS
+          </StyledLink>
       </LogoLink>
       <NavWrapper navIsOpened={navIsOpened}>
         <NavLinks>
